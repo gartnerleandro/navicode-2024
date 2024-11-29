@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Youtube, Instagram, X } from "lucide-react";
+import { Youtube, Instagram } from "lucide-react";
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
