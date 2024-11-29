@@ -1,0 +1,93 @@
+:root {
+  --primary: #580c1f;
+  --secondary: #c52233;
+  --secondary-rgb: 249, 200, 14;
+  --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+
+  --font-main: "Inter", system-ui, -apple-system, sans-serif;
+  --max-width: 1200px;
+  --navbar-height: 80px;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  --font-xs: 0.75rem; /* 12px */
+  --font-sm: 0.875rem; /* 14px */
+  --font-base: 1rem; /* 16px */
+  --font-md: 1.125rem; /* 18px */
+  --font-lg: 1.25rem; /* 20px */
+  --font-xl: 1.5rem; /* 24px */
+  --font-2xl: 2rem; /* 32px */
+  --font-3xl: 2.5rem; /* 40px */
+  --font-4xl: 3rem; /* 48px */
+  --font-5xl: 4rem; /* 64px */
+}
+
+.light {
+  --background-rgb: 240, 240, 245;
+  --foreground-rgb: 26, 26, 26;
+  --code-background: #f4f4f4;
+  --code-foreground: #2d2d2d;
+  --background-gradient: linear-gradient(to bottom, rgb(230, 230, 235), rgb(219, 219, 235));
+}
+
+.dark {
+  --background-rgb: 26, 26, 26;
+  --foreground-rgb: 255, 255, 255;
+  --code-background: #1e1e1e;
+  --code-foreground: #e0e0e0;
+  --background-gradient: linear-gradient(to bottom, rgb(26, 26, 26), rgb(20, 20, 20));
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.navbar-open {
+  overflow: clip;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--background-gradient);
+  color: rgb(var(--foreground-rgb));
+  line-height: 1.5;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.dark #nextjs {
+  filter: contrast(0.1);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
