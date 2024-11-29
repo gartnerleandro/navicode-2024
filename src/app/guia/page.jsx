@@ -73,7 +73,11 @@ export default function GuiaPage() {
           <ol>
             <li>
               Accede al{" "}
-              <a target="_blank" rel="noopener noreferrer" href="[URL_REPO]">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/gartnerleandro/navicode-2024"
+              >
                 repositorio en GitHub
               </a>
             </li>
@@ -173,7 +177,7 @@ export default function GuiaPage() {
             </button>
           ) : (
             <a
-              href="[URL_REPO]"
+              href="https://github.com/gartnerleandro/navicode-2024"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.navButton}
