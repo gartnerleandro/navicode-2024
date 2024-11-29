@@ -23,7 +23,14 @@ Puedes implementar todas o algunas de estas funcionalidades. ¡Tú eliges tu pro
 - Debe aparecer cuando el usuario hace scroll hacia abajo
 - Animación suave al subir
 - Visible pero no intrusivo
-- Ejemplo:
+
+<details>
+  <summary>Ejemplo</summary>
+
+  ![scrollToTop](https://github.com/user-attachments/assets/858dcdb2-d9fc-42ab-aca0-37745e8c46e4)
+</details>
+  
+
 
 #### 2. Selector de Tema (Dark/Light Mode)
 
@@ -31,7 +38,13 @@ Puedes implementar todas o algunas de estas funcionalidades. ¡Tú eliges tu pro
 - Persistencia usando localStorage
 - Transición suave entre temas
 - Considerar estados intermedios durante la carga
-- Ejemplo de implementación:
+  
+<details>
+  <summary>Ejemplo</summary>
+
+  ![themeSwitcher](https://github.com/user-attachments/assets/5869bd0e-5966-4e95-b834-22e3413d2659)
+
+</details>
 
 #### 3. Navegación Responsive
 
@@ -47,6 +60,13 @@ Puedes implementar todas o algunas de estas funcionalidades. ¡Tú eliges tu pro
 - Contador de compartidos (opcional)
 - Redes sugeridas: Twitter, Facebook, LinkedIn, WhatsApp
 
+<details>
+  <summary>Ejemplo</summary>
+
+ ![socialShare](https://github.com/user-attachments/assets/df71d231-835a-45d5-9163-140d28e74a3a)
+
+</details>
+
 ### ⏰ Características Navideñas
 
 #### 5. Cuenta Regresiva
@@ -54,9 +74,13 @@ Puedes implementar todas o algunas de estas funcionalidades. ¡Tú eliges tu pro
 - Actualización en tiempo real
 - Formato: DD:HH:MM:SS
 - Animación especial al llegar a cero
-- Ejemplo de diseño:
 
-  ![Countdown Example](https://ejemplo.com/countdown.png)
+<details>
+  <summary>Ejemplo</summary>
+
+ ![countdown](https://github.com/user-attachments/assets/83b5e75e-89ff-4439-855d-7f09614cc2d0)
+
+</details>
 
 #### 6. Formulario de Contacto con Santa
 
@@ -66,11 +90,25 @@ Puedes implementar todas o algunas de estas funcionalidades. ¡Tú eliges tu pro
 - Campos sugeridos:
   - Nombre
   - Mensaje
+ 
+<details>
+  <summary>Ejemplo</summary>
+
+![contactForm](https://github.com/user-attachments/assets/82441cc8-79f7-4a0c-9ed7-f75ea93f23e6)
+
+</details>
 
 #### 7. Lista de Regalos
 
 - CRUD completo
 - Persistencia en localStorage (o en cualquier otra base de datos)
+
+<details>
+  <summary>Ejemplo</summary>
+
+![wishList](https://github.com/user-attachments/assets/038d0829-47ad-4384-99d5-28865360734d)
+
+</details>
 
 #### 8. Modo Fiesta
 
@@ -83,17 +121,38 @@ Puedes implementar todas o algunas de estas funcionalidades. ¡Tú eliges tu pro
 
 - Preguntas sobre cultura navideña/peliculas/musica/etc
 
+<details>
+  <summary>Ejemplo</summary>
+
+![quizz](https://github.com/user-attachments/assets/0db13cea-cb3e-4da8-894b-a48adcb1711a)
+
+</details>
+
 #### 10. Galería de recuerdos
 
 - Carga de imágenes
 - Slider de imágenes (con imagenes de stock)
 - Si un usuario carga una imagen, debe aparecer en la galería de recuerdos
 
+<details>
+  <summary>Ejemplo</summary>
+
+![galeria de recuerdos](https://github.com/user-attachments/assets/0ec19edf-157c-4c10-8248-4e584d98310b)
+
+</details>
+
 #### 11. Juego de memoria temático
 
 - 6 cartas con imagenes de stock
 - Una vez mezcladas, se debe poder dar click a dos cartas y si coinciden, se debe eliminar ambas cartas
 - Al finalizar, debe mostrar el tiempo transcurrido y la cantidad de coincidencias
+
+<details>
+  <summary>Ejemplo</summary>
+
+![memory](https://github.com/user-attachments/assets/d2de244c-c6bd-4d0e-a861-b5cae2c44ed5)
+
+</details>
 
 ### 🎵 Multimedia
 
@@ -108,6 +167,13 @@ Puedes implementar todas o algunas de estas funcionalidades. ¡Tú eliges tu pro
 - Debe tener un input para que el usuario ingrese el villancico
 - Debe mostrar un emoji por cada letra que el usuario ingrese
 - Al finalizar, debe mostrar el tiempo transcurrido y la cantidad de letras correctas
+
+<details>
+  <summary>Ejemplo</summary>
+
+![adivina](https://github.com/user-attachments/assets/7ea2f83e-5cba-48d8-b75f-3ad4754c2345)
+
+</details>
 
 #### 14. Chat con un elfo de soporte
 
