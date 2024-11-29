@@ -12,7 +12,7 @@
   width: 100%;
   max-width: 800px;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--code-background);
   border-radius: 16px;
   padding: 2rem;
   box-shadow: var(--shadow-sm);
@@ -28,15 +28,15 @@
   border-radius: 50%;
   object-fit: cover;
   animation: float 3s ease-in-out infinite;
-  border: 2px solid var(--border);
+  border: 2px solid var(--code-background);
 }
 
 .speechBubble {
   position: relative;
-  background: var(--background);
+  background: var(--code-background);
   padding: 1.5rem;
   border-radius: 12px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--code-background);
   flex: 1;
   color: var(--text);
 }
@@ -62,7 +62,7 @@
   left: -20px;
   top: 20px;
   border: 10px solid transparent;
-  border-right-color: var(--border);
+  border-right-color: var(--code-background);
 }
 
 .speechBubble::after {
@@ -71,7 +71,7 @@
   left: -19px;
   top: 20px;
   border: 10px solid transparent;
-  border-right-color: var(--background);
+  border-right-color: var(--code-background);
 }
 
 .navigation {
@@ -123,7 +123,7 @@
   background: var(--muted);
   cursor: pointer;
   transition: all 0.2s;
-  border: 1px solid var(--border);
+  border: 1px solid var(--code-background);
 }
 
 .progressDot:hover {
@@ -183,11 +183,11 @@
   }
 
   .speechBubble::before {
-    border-bottom-color: var(--border);
+    border-bottom-color: var(--code-background);
   }
 
   .speechBubble::after {
-    border-bottom-color: var(--background);
+    border-bottom-color: var(--code-background);
     top: -19px;
   }
 
