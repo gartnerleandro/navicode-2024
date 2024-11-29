@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import dynamic from "next/dynamic";
@@ -51,6 +51,19 @@ export function NavBar() {
     }
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+
+    if (menuButton?.current) {
+      menuButton.current.setSpeed(3);
+      menuButton.current.playSegments([85, 140]);
+
+      if (typeof window !== null) {
+        document.querySelector("html")?.classList.remove("navbar-open");
+      }
+    }
+  };
+
   if (!mounted) return null;
 
   return (
@@ -82,11 +95,11 @@ export function NavBar() {
           role="navigation"
           aria-label="Menú principal"
         >
-          <Link href="#how-it-works" onClick={toggleMenu}>
+          <Link href="#how-it-works" onClick={closeMenu}>
             Cómo Funciona
           </Link>
-          <Link href="#resources" onClick={toggleMenu}>
-            Recursos
+          <Link href="#faq" onClick={closeMenu}>
+            Preguntas Frecuentes
           </Link>
           <button
             onClick={() => {
@@ -97,7 +110,7 @@ export function NavBar() {
           >
             {theme === "dark" ? "☀️" : "🌙"}
           </button>
-          <Link href="/guia" className={styles.cta} onClick={toggleMenu}>
+          <Link href="/guia" className={styles.cta} onClick={closeMenu}>
             Participar
           </Link>
         </div>
