@@ -60,6 +60,22 @@
   font-size: 1.5rem;
 }
 
+.categoryHeader:hover .categoryTitle {
+  color: white;
+}
+
+.categoryHeader.active .categoryTitle {
+  color: white;
+}
+
+.categoryHeader:hover .arrow {
+  color: white;
+}
+
+.categoryHeader.active .arrow {
+  color: white;
+}
+
 .categoryTitle {
   flex: 1;
   text-align: left;
@@ -98,12 +114,14 @@
 
 .question:hover {
   background: var(--background-hover);
+  color: white;
 }
 
 .question.active {
   background: var(--background-active);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  color: white;
 }
 
 .questionArrow {
