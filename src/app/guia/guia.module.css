@@ -1,0 +1,262 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onboarding {
+  width: 100%;
+  max-width: 800px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.avatarContainer {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  animation: float 3s ease-in-out infinite;
+  border: 2px solid var(--border);
+}
+
+.speechBubble {
+  position: relative;
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  flex: 1;
+  color: var(--text);
+}
+
+.speechBubble h2 {
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.speechBubble a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.speechBubble a:hover {
+  text-decoration: underline;
+}
+
+.speechBubble::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  border: 10px solid transparent;
+  border-right-color: var(--border);
+}
+
+.speechBubble::after {
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: 20px;
+  border: 10px solid transparent;
+  border-right-color: var(--background);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.navButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.navButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.navButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.progress {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navigation a {
+  font-size: var(--font-sm);
+  line-height: initial;
+}
+
+.content p {
+  text-wrap: pretty;
+}
+
+.progressDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--border);
+}
+
+.progressDot:hover {
+  transform: scale(1.1);
+}
+
+.progressDot.active {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+.content {
+  line-height: 1.6;
+}
+
+.content ul,
+.content ol {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .onboarding {
+    padding: 1.5rem;
+  }
+
+  .avatarContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .speechBubble::before,
+  .speechBubble::after {
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    border-right-color: transparent;
+  }
+
+  .speechBubble::before {
+    border-bottom-color: var(--border);
+  }
+
+  .speechBubble::after {
+    border-bottom-color: var(--background);
+    top: -19px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .progress {
+    order: -1;
+  }
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.steps {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.step {
+  padding: 2rem;
+  border-radius: 8px;
+  background: var(--card-bg);
+  transition: transform 0.2s;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+}
+
+.tips {
+  margin-bottom: 4rem;
+}
+
+.tipsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.community {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.faqs {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+
+.faqItem summary {
+  cursor: pointer;
+  font-weight: bold;
+}
