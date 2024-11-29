@@ -99,7 +99,7 @@ export function NavBar() {
             Cómo Funciona
           </Link>
           <Link href="#faq" onClick={closeMenu}>
-            Preguntas Frecuentes
+            FAQs
           </Link>
           <button
             onClick={() => {

@@ -143,7 +143,7 @@ export function HowItWorks() {
             Características a implementar
           </motion.h3>
           <div className={styles.featureGrid}>
-            {features.map((feature, index) => (
+            {features.map((feature) => (
               <motion.div
                 key={feature}
                 className={styles.featureCard}
@@ -151,8 +151,9 @@ export function HowItWorks() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 whileHover={{ scale: 1.05, translateY: -5 }}
                 viewport={{ once: true }}
+                title={feature}
                 transition={{
-                  delay: index * 0.1,
+                  delay: 0.1,
                   type: "spring",
                   stiffness: 200,
                   damping: 20,

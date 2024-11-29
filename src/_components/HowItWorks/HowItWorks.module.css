@@ -354,7 +354,7 @@
 }
 
 .featureCard {
-  background: var(--background-secondary);
+  background: rgba(var(--foreground-rgb), 0.05);
   border-radius: 1rem;
   padding: 1.5rem;
   display: flex;
